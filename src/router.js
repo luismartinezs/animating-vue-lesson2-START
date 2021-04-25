@@ -25,20 +25,26 @@ export default new Router({
     {
       path: '/drawer',
       name: 'drawer',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () =>
         import(/* webpackChunkName: "about" */ './views/Drawer.vue')
     },
     {
       path: '/cards',
       name: 'cards',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () =>
         import(/* webpackChunkName: "about" */ './views/Cards.vue')
+    },
+    {
+      path: '/simple',
+      name: 'simple',
+      component: () =>
+        import(/* webpackChunkName: "about" */ './views/Simple.vue')
+    },
+    {
+      path: '/stagger',
+      name: 'stagger',
+      component: () =>
+        import(/* webpackChunkName: "about" */ './views/Stagger.vue')
     }
   ]
 })
