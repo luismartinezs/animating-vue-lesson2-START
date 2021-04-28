@@ -45,6 +45,12 @@ export default new Router({
       name: 'stagger',
       component: () =>
         import(/* webpackChunkName: "about" */ './views/Stagger.vue')
+    },
+    {
+      path: '/state',
+      name: 'state',
+      component: () =>
+        import(/* webpackChunkName: "about" */ './views/State.vue')
     }
   ]
 })
